@@ -69,7 +69,7 @@ with col_graf1:
         .nlargest(10)
         .sort_values()
         .reset_index()
-    ( fig_cargos = px.bar(
+    ('fig_cargos = px.bar(
         top_cargos,
         x="usd",
         y="cargo",
