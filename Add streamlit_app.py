@@ -1,12 +1,4 @@
 
-pandas==2.2.3
-streamlit==1.44.1
-plotly==5.24.1
-Instalar as bibliotecas necessárias
-pip install -r requirements.txt
-Criar a Interface do Dashboard com Streamlit
-
-Realizar o deploy do Dashboard no Streamlit Cloud: https://streamlit.io/cloud
 import streamlit as st
 import pandas as pd
 import plotly.express as px
