@@ -63,13 +63,13 @@ st.markdown("---")
 col_graf1, col_graf2 = st.columns(2)
 
 with col_graf1:
-    'top_cargos' = (
+    '('top_cargos = (
         df_filtrado.groupby("cargo")["usd"]
         .mean()
         .nlargest(10)
         .sort_values()
         .reset_index()
-    'fig_cargos' = px.bar(
+    '(fig_cargos = px.bar(
         top_cargos,
         x="usd",
         y="cargo",
