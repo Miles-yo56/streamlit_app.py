@@ -42,8 +42,8 @@ df_f = df[
 st.title("🎲 Dashboard de Salários na Área de Dados")
 
 if df_f.empty:
-st.warning("Nenhum dado para os filtros selecionados.")
-st.stop()
+  st.warning("Nenhum dado para os filtros selecionados.")
+  st.stop()
 
 col1, col2, col3, col4 = st.columns(4)
 
