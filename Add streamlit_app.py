@@ -1,3 +1,6 @@
+streamlit_app.py
+requirements.txt
+
 # --- Configuração da Página ---
 st.set_page_config(
     page_title="Dashboard de Salários na Área de Dados",
