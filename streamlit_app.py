@@ -1,10 +1,6 @@
-
-
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-
-
 
 st.set_page_config(
 page_title="Dashboard de Salários na Área de Dados",
@@ -12,13 +8,9 @@ page_icon="📊",
 layout="wide",
 )
 
-
-
 df = pd.read_csv(
 "https://raw.githubusercontent.com/vqrca/dashboard_salarios_dados/refs/heads/main/dados-imersao-final.csv"
 )
-
-
 
 st.sidebar.header("🔍 Filtros")
 
@@ -40,16 +32,12 @@ tamanhos_sel = st.sidebar.multiselect(
 "Tamanho da Empresa", tamanhos, default=tamanhos
 )
 
-
-
 df_f = df[
 (df["ano"].isin(anos_sel)) &
 (df["senioridade"].isin(senioridades_sel)) &
 (df["contrato"].isin(contratos_sel)) &
 (df["tamanho_empresa"].isin(tamanhos_sel))
 ]
-
-
 
 st.title("🎲 Dashboard de Salários na Área de Dados")
 
@@ -65,8 +53,6 @@ col3.metric("Registros", df_f.shape[0])
 col4.metric("Cargo mais frequente", df_f["cargo"].mode()[0])
 
 st.markdown("---")
-
-
 
 colg1, colg2 = st.columns(2)
 
