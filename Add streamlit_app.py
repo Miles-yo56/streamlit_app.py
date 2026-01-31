@@ -1,6 +1,3 @@
-import streamlit as st
-import panda as pd
-
 # --- Configuração da Página ---
 st.set_page_config(
     page_title="Dashboard de Salários na Área de Dados",
