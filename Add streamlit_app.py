@@ -1,5 +1,4 @@
 
-Criar um arquivo chamado requirements.txt e adicionar os pacotes necessários
 pandas==2.2.3
 streamlit==1.44.1
 plotly==5.24.1
